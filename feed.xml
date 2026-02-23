@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>Sable Podcasts</title>
     <description>AI-generated podcasts from your topics and resources</description>
     <language>en-us</language>
     <itunes:author>Sable</itunes:author>
+    <itunes:owner>
+      <itunes:name>Sable</itunes:name>
+      <itunes:email>sable1991@users.noreply.github.com</itunes:email>
+    </itunes:owner>
     <itunes:category text="Technology"/>
-    <itunes:explicit>false</itunes:explicit>
+    <itunes:explicit>clean</itunes:explicit>
     <link>https://sable1991.github.io/sable-podcasts/</link>
-    <!-- Episodes will be added here -->
-
     <item>
       <title>Why Self-Help Methods Keep You Stuck</title>
       <description>Exploring the nature of Truth and why conventional self-help approaches fail - generated from Kapil Gupta's discourses</description>
       <enclosure url="https://sable1991.github.io/sable-podcasts/episodes/why-self-help-methods-keep-you-stuck.mp3" length="7224978" type="audio/mpeg"/>
       <guid isPermaLink="false">sable-podcast-1771875098</guid>
-      <pubDate>Mon, 23 Feb 2026 15:31:38 </pubDate>
-      <itunes:duration>903</itunes:duration>
+      <pubDate>Mon, 23 Feb 2026 15:31:38 +0000</pubDate>
+      <itunes:duration>15:03</itunes:duration>
     </item>
   </channel>
 </rss>
