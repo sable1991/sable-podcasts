@@ -11,6 +11,12 @@
     </itunes:owner>
     <itunes:category text="Technology"/>
     <itunes:explicit>clean</itunes:explicit>
+    <itunes:image href="https://sable1991.github.io/sable-podcasts/cover.png"/>
+    <image>
+      <url>https://sable1991.github.io/sable-podcasts/cover.png</url>
+      <title>Sable Podcasts</title>
+      <link>https://sable1991.github.io/sable-podcasts/</link>
+    </image>
     <link>https://sable1991.github.io/sable-podcasts/</link>
     <item>
       <title>Why Self-Help Methods Keep You Stuck</title>
