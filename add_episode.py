@@ -37,7 +37,7 @@ def main():
     # Get file size
     file_size = os.path.getsize(episode_file)
     
-    # Get duration with ffprobe
+    # Get duration with ffprobe (format as HH:MM:SS)
     duration = ""
     try:
         result = subprocess.run(
@@ -47,16 +47,23 @@ def main():
         )
         if result.returncode == 0:
             duration_sec = int(float(result.stdout.strip()))
-            duration = f"<itunes:duration>{duration_sec}</itunes:duration>"
+            hours = duration_sec // 3600
+            minutes = (duration_sec % 3600) // 60
+            seconds = duration_sec % 60
+            if hours > 0:
+                duration = f"<itunes:duration>{hours:02d}:{minutes:02d}:{seconds:02d}</itunes:duration>"
+            else:
+                duration = f"<itunes:duration>{minutes:02d}:{seconds:02d}</itunes:duration>"
     except:
         pass
     
     # Generate episode URL
     episode_url = f"https://sable1991.github.io/sable-podcasts/episodes/{safe_title}.mp3"
     
-    # Generate GUID and date
+    # Generate GUID and date (always use UTC with +0000 timezone)
     guid = f"sable-podcast-{int(datetime.now().timestamp())}"
-    pub_date = datetime.now().strftime("%a, %d %b %Y %H:%M:%S %z")
+    from datetime import timezone
+    pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     
     # Read and parse feed
     with open(feed_file, 'r') as f:
