@@ -35,5 +35,14 @@
       <pubDate>Tue, 03 Mar 2026 18:12:29 +0000</pubDate>
       <itunes:duration>22:24</itunes:duration>
     </item>
+
+    <item>
+      <title>Slay Your Ego: The Rock Warrior Way</title>
+      <description>AI-generated podcast covering Arno Ilgner's The Rock Warrior's Way and Espresso Lessons - mental training for climbers including the warrior mindset, risk vs danger, conscious falling, attention training, and commitment.</description>
+      <enclosure url="https://sable1991.github.io/sable-podcasts/episodes/slay-your-ego-the-rock-warrior-way.mp3" length="10342745" type="audio/mpeg"/>
+      <guid isPermaLink="false">sable-podcast-1772586306</guid>
+      <pubDate>Wed, 04 Mar 2026 01:05:06 +0000</pubDate>
+      <itunes:duration>21:32</itunes:duration>
+    </item>
   </channel>
 </rss>
