@@ -61,8 +61,11 @@ def main():
     episode_url = f"https://sable1991.github.io/sable-podcasts/episodes/{safe_title}.mp3"
     
     # Generate GUID and date (always use UTC with +0000 timezone)
-    guid = f"sable-podcast-{int(datetime.now().timestamp())}"
+    # Use timestamp + title hash to ensure uniqueness even for rapid additions
     from datetime import timezone
+    import hashlib
+    title_hash = hashlib.md5(title.encode()).hexdigest()[:8]
+    guid = f"sable-podcast-{int(datetime.now(timezone.utc).timestamp())}-{title_hash}"
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     
     # Read and parse feed
