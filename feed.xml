@@ -62,5 +62,14 @@
       <pubDate>Wed, 04 Mar 2026 01:27:35 +0000</pubDate>
       <itunes:duration>21:31</itunes:duration>
     </item>
+
+    <item>
+      <title>Persuasion Tactics from The Boron Letters</title>
+      <description>Gary Halbert's copywriting wisdom from The Boron Letters - headlines, hooks, emotional triggers, storytelling, offers, persuasion techniques, and direct response marketing wisdom from his legendary letters to his son.</description>
+      <enclosure url="https://sable1991.github.io/sable-podcasts/episodes/persuasion-tactics-from-the-boron-letters.mp3" length="9947564" type="audio/mpeg"/>
+      <guid isPermaLink="false">sable-podcast-1772588659-db88bf88</guid>
+      <pubDate>Wed, 04 Mar 2026 01:44:19 +0000</pubDate>
+      <itunes:duration>20:43</itunes:duration>
+    </item>
   </channel>
 </rss>
